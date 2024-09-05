@@ -1,6 +1,6 @@
 # Butterworth Filter Implementation
 
-Welcome to the **Butterworth Filter Implementation** repository! This project documents the result of my journey of developing a Butterworth filter to process sensor data, a challenge that significantly pushed me beyond my comfort zone. Leveraging my Python programming skills and my background in electronics from my technician degree, I navigated the complexities of signal processing to achieve this implementation.
+This project documents the result of my journey of developing a Butterworth filter to process sensor data, a challenge that significantly pushed me beyond my comfort zone. Leveraging my Python programming skills and my background in electronics from my technician degree, I navigated the complexities of signal processing to achieve this implementation.
 
 ## Introduction
 
