@@ -1,6 +1,6 @@
 # Butterworth Filter Implementation
 
-Welcome to the **Butterworth Filter Implementation** repository! This project documents my journey of developing a Butterworth filter to process sensor data, a challenge that significantly pushed me beyond my comfort zone. Leveraging my Python programming skills and my background in electronics from my technician degree, I navigated the complexities of signal processing to achieve this implementation.
+Welcome to the **Butterworth Filter Implementation** repository! This project documents the result of my journey of developing a Butterworth filter to process sensor data, a challenge that significantly pushed me beyond my comfort zone. Leveraging my Python programming skills and my background in electronics from my technician degree, I navigated the complexities of signal processing to achieve this implementation.
 
 ## Introduction
 
@@ -26,11 +26,16 @@ The Butterworth filter can be configured in three main ways:
 
 The Butterworth filter is defined by a mathematical formula that dictates how it attenuates (reduces) different frequencies to achieve a smooth and flat response. It is designed to be as flat as possible in the passband and to smoothly roll off in the stopband (the range of frequencies it blocks).
 
+![image](https://github.com/user-attachments/assets/ab61fd85-dd6b-425d-b577-ae72e5334a9e)
+
+![image](https://github.com/user-attachments/assets/e670d835-47e8-4304-a6d7-0052f0d0f53d)
+
+
 ### Formula
 
 The Butterworth filter's transfer function can be expressed as:
 
-![Butterworth Filter Formula](img1.png)
+![Butterworth Filter Formula](https://github.com/user-attachments/assets/e138855c-e9ad-430e-8e7b-aabe277ac5e1)
 
 Where:
 
@@ -43,13 +48,27 @@ Where:
 
 One real-world application of the Butterworth filter is in **Amplitude Modulation (AM) used in radios**. In AM, the amplitude (or strength) of a carrier wave is varied in proportion to the signal (like music or voice) you want to transmit. A Butterworth filter can be used to extract the original signal components from the modulated carrier wave, providing a clean and accurate reproduction of the transmitted signal.
 
-![AM Modulation Example](img2.png)
+![image](https://github.com/user-attachments/assets/d83cae05-03d5-43d2-b435-d8f7459bf87b)
+
 
 ## Project Files
 
-- `butterworth_filter.py`: Contains the Python implementation of the Butterworth filter.
-- `examples/`: A folder containing examples of the filter applied to different types of signals.
-- `docs/`: Documentation files explaining the mathematical background and practical usage of the Butterworth filter.
+- `linear.py`: Contains the Python implementation of the Butterworth filter using a linear wave.
+  
+  ![image](https://github.com/user-attachments/assets/ca3130f9-c933-4f23-9b55-3a24461ac1df)
+
+- `square.py`: Contains the Python implementation of the Butterworth filter using a square wave.
+  
+![image](https://github.com/user-attachments/assets/8c910e6c-6c4c-4c95-acba-9fde0c6843f7)
+  
+- `triangular.py`: Contains the Python implementation of the Butterworth filter using a triangular wave.
+  
+![image](https://github.com/user-attachments/assets/07dc0d29-a9c5-44ea-9da9-9a5450894350)
+  
+- `senoidal.py`: Contains the Python implementation of the Butterworth filter using a sin wave.
+  
+  ![image](https://github.com/user-attachments/assets/cc6d6804-842b-4976-b413-f4d45ce957a4)
+
 
 ## Getting Started
 
@@ -58,7 +77,7 @@ To use the Butterworth filter in your own projects, follow these steps:
 1. **Clone the repository**:
 
    ````bash
-   git clone https://github.com/yourusername/butterworth-filter.git```
+   git clone https://github.com/Gabriel-Volpini/Butterworth.git
 
    ````
 
@@ -70,5 +89,5 @@ To use the Butterworth filter in your own projects, follow these steps:
 
 3. **Run the example scripts to see the filter in action:**:
    ```bash
-   python examples/low_pass_filter_example.py
+   python linear.py
    ```
